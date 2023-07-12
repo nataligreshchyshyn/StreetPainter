@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Flask App</title>
+</head>
+
+<body>
+    <h1>Color Streets</h1>
+    <form id="uploadForm" enctype="multipart/form-data" method="POST">
+        <div class="input-group mb-3">
+            <input type="file" name="file" id="fileInput" multiple>
+            <input type="submit" value="Generate Image" id="submitBtn">
+        </div>
+    </form>
+</body>
+
+</html>
